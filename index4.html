@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .navigation-bar {
+            /* border: 1px solid brown; */
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            padding: 0.8rem 1.8rem;
+            box-shadow: 0 2px 5px lightgray;
+            /* position: fixed; */
+            top: 0;
+            left: 0;
+            width: 100%;
+            color: rgb(9, 144, 144);
+            z-index: 5;
+            background-color: rgb(255, 225, 179);
+
+        }
+
+        .prots {
+            /* border: 1px solid green; */
+            width: 40%;
+            padding: 0 1rem;
+            gap: 0rem;
+            font-size: 2.8rem;
+            font-weight: 150;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+
+        }
+
+        .other-contents {
+            display: flex;
+            align-items: center;
+            font-size: 2.8rem;
+            font-weight: 600;
+        }
+
+        .other-contents-grouper {
+            /* border: 1px solid blue; */
+            display: flex;
+            flex-direction: row;
+            width: 60%;
+            justify-content: space-between;
+
+        }
+
+        .page-1 {
+            /* border: 1px solid red; */
+            margin-top: 80px;
+            width: 100%;
+            height: 100dvh;
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .page1-grouper {
+            display: flex;
+            gap: 2rem;
+            /* border: 1px solid blue; */
+            width: 80%;
+            align-items: center;
+            padding-top: 5rem;
+
+        }
+
+        .pagecontents {
+            /* border: 5px solid green; */
+            width: 100;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+            font-size: 2.8rem;
+            /* text-align: center; */
+            gap: 2.5rem;
+
+        }
+
+        h1 {
+            /* border: 1px solid black; */
+            font-size: 5.5rem;
+            text-align: center;
+        }
+
+        ul{
+            list-style-type:lower-roman;
+            padding-left: 2rem;
+        }
+
+
+
+        .button-grouper {
+            /* border: 1px solid maroon; */
+            display: flex;
+            flex-direction: row;
+            padding: 1.5rem;
+            justify-content: center;
+            gap: 3rem;
+
+
+
+
+        }
+
+        .Qgis-button {
+            /* border: 1px solid goldenrod; */
+            width: 10%;
+            padding: 1rem 2rem;
+            background-color: #0fce32;
+
+
+        }
+
+        .arcgis-button {
+            /* border: 1px solid goldenrod; */
+            width: 15%;
+            padding: 1rem 2rem;
+            background-color: #0fce32;
+
+        }
+
+        .image {
+            /* border: 5px solid rgb(30, 255, 0); */
+            width: 60%;
+            height: 100%;
+        }
+
+        .image img {
+            height: 100%;
+            object-fit: contain;
+            border-radius: 5rem;
+            box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.395);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation-bar">
+        <div class="prots">
+            <div class="portfolio-icon">
+                <img src="portfolio (1).jpg" width="80" height="80">
+            </div>
+            <h1>PORTFOLIO</h1>
+        </div>
+
+        <div class="other-contents-grouper">
+            <div class="other-contents">
+                <p>HOME</p>
+            </div>
+            <div class="other-contents">
+                <P>ABOUT</P>
+            </div>
+            <div class="other-contents">
+                <P>SERVICES</P>
+            </div>
+            <div class="other-contents">
+                <P>PORTFOLIO</P>
+            </div>
+            <div class="other-contents">
+                <p>PAGE</p>
+            </div>
+            <div class="other-contents">
+                <P>CONTACTS</P>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="page-1">
+        <div class="page1-grouper">
+            <div class="pagecontents">
+                <h1>CARTOGRAPHER</h1>
+                <p>Hi;am Musinga Moris.</p>
+                <p>I am currently a data manager with diploma of cartography in surveying with experience in Gis
+                    softwares
+                    and
+                    solving all problems related to data management.
+                </p>
+                <P>This portfolio is a collection of my projects, experiments and ideas that represent both my skills
+                    and
+                    commitment to deliver quality results.</P>
+                <p>Software Experience:</p>
+                <ul>
+                    <li>Qgis</li>
+                    <li>Arc Gis</li>
+                    <li>Data base oriented softwares</li>
+                </ul>
+
+                <div class="button-grouper">
+                    <div class="Qgis-button">
+                        <p>QGIS</p>
+
+                    </div>
+                    <div class="arcgis-button">
+                        <p>ARC GIS</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="image">
+                <img src="image 1.jpg">
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .names-div{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 0.5rem;
+            width: 30%;
+            height: 20dvh;
+            border: 1px solid orange;
+            transition: left 1s ease;
+        }
+        .button{
+            display: flex;
+            margin: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* width: 20%; */
+            height: 5dvh;
+            border-radius: 3rem;
+            background-color: rgb(37, 202, 0);
+            border: 1px solid green;
+        }
+        .button p{
+            color: white;
+            font-size: 0.9rem;
+        }
+    </style>
+    <title>Morris</title>
+</head>
+<body>
+    <div class="names-div" id="names">
+        <p>Nuwe Ariho</p>
+        <p>Morris Musinga</p>
+    </div>
+    <div class="button" id="button">
+        <p>Move names</p>
+    </div>
+    
+
+    <Script> 
+
+    const namesDiv = document.getElementById('names')
+    const buttonDiv = document.getElementById('button')
+
+    buttonDiv.addEventListener('click', (e)=>{
+        console.log(e)
+        // namesDiv.style.rotate = '90deg'
+        namesDiv.style.left = '100px'
+    })
+
+    </Script>
+</body>
+</html>

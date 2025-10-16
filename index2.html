@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #242C33;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .nav-bar {
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid black; */
+            gap: 1rem;
+            padding: 0.8rem 1.6rem;
+            box-shadow: 0 2px 5px rgba(43, 49, 57, 0.071);
+            position: absolute;
+            width: 100%;
+        }
+
+        .index-icon {
+            gap: irem;
+            padding: 0 1rem;
+            flex: 1;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .contents {
+            display: flex;
+            align-items: center;
+
+        }
+        .content-grouper{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+             /* border: 1px solid rgb(10, 140, 54); */
+
+
+        }
+        .page1{
+            /* border: 1px solid darkblue; */
+            width: 100%;
+            height: 100dvh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .page1-contents{
+            /* border: 1px solid green; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: 1.5rem;
+        }
+        h1{
+            /* border: 1px solid black; */
+            font-size: 3.5rem;
+        }
+        .page1-buttons{
+            display: flex;
+            /* border: 1px solid maroon; */
+            gap: 1rem;
+           align-items: center;
+           justify-content: center;
+
+        }
+        .playstore-button{
+            /* border: 1px solid lightpink; */
+            padding: 0.4rem 0.8rem;
+            background-color: #2E7A56;
+        }
+        .playstore-button:active,.playstore-button:hover {
+            background-color: #3DA675;
+        }
+        .playstore-button p{
+            color: white;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="index-icon">
+            <p>acres</p>
+        </div>
+        <div class="content-grouper">
+            <div class="contents">
+            <p>Map</p>
+        </div>
+        <div class="contents">
+            <p>Pricing</p>
+        </div>
+        <div class="contents">
+            <p>Solutions</p>
+            <span class="material-symbols-outlined">
+                keyboard_arrow_down
+            </span>
+        </div>
+        <div class="contents">
+            <p>Industries</p>
+            <span class="material-symbols-outlined">
+                keyboard_arrow_down
+            </span>
+        </div>
+        <div class="contents">
+            <p>Market Intel</p>
+            <span class="material-symbols-outlined">
+                keyboard_arrow_down
+            </span>
+        </div>
+        <div class="contents">
+            <p>Resources</p>
+            <span class="material-symbols-outlined">
+                keyboard_arrow_down
+            </span>
+        </div></div>
+        
+
+    </div>
+
+    <div class="page1">
+        <div class="page1-contents">
+            <h1>Take Acres Anywhere</h1>
+            <p>Quickly access and share property data no matter where you roam. Get the app now!</p>
+            <div class="page1-buttons">
+                <div class="playstore-button">
+                    <p>Google Play</p>
+                </div>
+                <div class="playstore-button">
+                    <p>App Store</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
