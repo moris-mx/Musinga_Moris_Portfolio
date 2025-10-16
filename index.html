@@ -13,17 +13,24 @@
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
+        .page1 {
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .navigation-bar {
             /* border: 1px solid brown; */
             display: flex;
             flex-direction: row;
             gap: 1rem;
-            padding: 0.8rem 1.8rem;
-            box-shadow: 0 2px 5px lightgray;
-            /* position: fixed; */
-            top: 0;
-            left: 0;
+            padding: 0 1.8rem;
+            box-shadow: 0 2px 1px lightgray;
             width: 100%;
+            height: 8dvh;
             color: rgb(9, 144, 144);
             z-index: 5;
             background-color: rgb(255, 225, 179);
@@ -33,15 +40,23 @@
         .prots {
             /* border: 1px solid green; */
             width: 40%;
-            padding: 0 1rem;
             gap: 0rem;
-            font-size: 2.8rem;
-            font-weight: 150;
+            font-size: 1.5rem;
             display: flex;
             flex-direction: row;
             align-items: center;
+        }
 
+        .portfolio-icon {
+            height: 90%;
+            aspect-ratio: 1/1;
 
+        }
+
+        .portfolio-icon img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
         }
 
         .other-contents {
@@ -60,131 +75,145 @@
 
         }
 
-        .page-1 {
-            /* border: 1px solid red; */
-            margin-top: 80px;
-            width: 100%;
-            height: 100dvh;
-            display: flex;
-            justify-content: center;
-            padding: 2rem;
-        }
 
+
+
+        /* Page section starts here */
         .page1-grouper {
             display: flex;
-            gap: 2rem;
-            /* border: 1px solid blue; */
-            width: 80%;
             align-items: center;
-            padding-top: 5rem;
-
+            /* border: 5px solid purple; */
+            /* flex: 1; */
+            width: 90%;
+            height: 92dvh;
+            gap: 1.5rem;
         }
 
         .pagecontents {
-            /* border: 5px solid green; */
-            width: 100;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            /* align-items: center; */
-            justify-content: center;
-            font-size: 2.8rem;
-            /* text-align: center; */
-            gap: 2.5rem;
+            flex: 1;
+            width: 50%;
+            /* border: 1px solid rgb(0, 123, 255); */
 
         }
 
         h1 {
-            /* border: 1px solid black; */
-            font-size: 5.5rem;
+            font-size: 1.5rem;
             text-align: center;
+            margin-bottom: 1rem;
         }
 
-        ul{
-            list-style-type:lower-roman;
-            padding-left: 2rem;
+        p {
+            font-size: 1.1rem;
+            color: rgb(89, 89, 89);
         }
-
-
+        
+        ul {
+            color: rgb(89, 89, 89);
+            list-style-type: none;
+            padding-left: 1.5rem;
+        }
 
         .button-grouper {
-            /* border: 1px solid maroon; */
+            width: 100%;
             display: flex;
-            flex-direction: row;
-            padding: 1.5rem;
+            gap: 1rem;
             justify-content: center;
-            gap: 3rem;
-
-
-
-
         }
 
-        .Qgis-button {
-            /* border: 1px solid goldenrod; */
-            width: 10%;
-            padding: 1rem 2rem;
-            background-color: #0fce32;
-
-
+        .button {
+            width: 100px;
+            height: 2.5rem;
+            background-color: rgb(93, 231, 14);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1.25rem;
         }
 
-        .arcgis-button {
-            /* border: 1px solid goldenrod; */
-            width: 15%;
-            padding: 1rem 2rem;
-            background-color: #0fce32;
-
+        .button p {
+            font-size: 1rem;
+            color: aliceblue;
+            font-weight: 500;
         }
+
+        .button:hover {
+            background-color: rgb(67, 165, 10);
+        }
+
+
 
         .image {
-            /* border: 5px solid rgb(30, 255, 0); */
-            width: 60%;
-            height: 100%;
+            /* border: 1px solid rgb(30, 255, 0); */
+            width: 40%;
+            aspect-ratio: 1/1.4;
         }
 
         .image img {
             height: 100%;
-            object-fit: contain;
-            border-radius: 5rem;
-            box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.395);
+            width: 100%;
+            object-fit: cover;
+            border-radius: 2rem;
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.436);
+        }
+
+
+        @media (max-width: 600px) {
+            .other-contents-grouper{
+                display: none;
+            }
+            .page1-grouper{
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                border: 1px solid red;
+            }
+
+            .pagecontents{
+                width: 95%;
+            }
+
+            .image {
+            /* border: 1px solid rgb(30, 255, 0); */
+            width: 95%;
+            aspect-ratio: 1/1.4;
+        }
         }
     </style>
 </head>
 
 <body>
-    <div class="navigation-bar">
-        <div class="prots">
-            <div class="portfolio-icon">
-                <img src="portfolio (1).jpg" width="80" height="80">
+    <div class="page1">
+        <div class="navigation-bar">
+            <div class="prots">
+                <div class="portfolio-icon">
+                    <img src="portfolio (1).jpg">
+                </div>
+                <h1>PORTFOLIO</h1>
             </div>
-            <h1>PORTFOLIO</h1>
+
+            <div class="other-contents-grouper">
+                <div class="other-contents">
+                    <p>HOME</p>
+                </div>
+                <div class="other-contents">
+                    <P>ABOUT</P>
+                </div>
+                <div class="other-contents">
+                    <P>SERVICES</P>
+                </div>
+                <div class="other-contents">
+                    <P>PORTFOLIO</P>
+                </div>
+                <div class="other-contents">
+                    <p>PAGE</p>
+                </div>
+                <div class="other-contents">
+                    <P>CONTACTS</P>
+                </div>
+            </div>
+
         </div>
 
-        <div class="other-contents-grouper">
-            <div class="other-contents">
-                <p>HOME</p>
-            </div>
-            <div class="other-contents">
-                <P>ABOUT</P>
-            </div>
-            <div class="other-contents">
-                <P>SERVICES</P>
-            </div>
-            <div class="other-contents">
-                <P>PORTFOLIO</P>
-            </div>
-            <div class="other-contents">
-                <p>PAGE</p>
-            </div>
-            <div class="other-contents">
-                <P>CONTACTS</P>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="page-1">
         <div class="page1-grouper">
             <div class="pagecontents">
                 <h1>CARTOGRAPHER</h1>
@@ -205,11 +234,11 @@
                 </ul>
 
                 <div class="button-grouper">
-                    <div class="Qgis-button">
+                    <div class="button">
                         <p>QGIS</p>
-
                     </div>
-                    <div class="arcgis-button">
+
+                    <div class="button">
                         <p>ARC GIS</p>
                     </div>
                 </div>
